@@ -1,0 +1,4 @@
+name: rebelwars
+version: '${version}'
+main: papermc.rebelwars.Rebelwars
+api-version: '1.20'
