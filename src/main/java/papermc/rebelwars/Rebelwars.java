@@ -23,7 +23,7 @@ public final class Rebelwars extends JavaPlugin implements Listener {
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event){
-        getLogger().info("A player has joined the server");
+        event.setJoinMessage("Welcome");
     }
 
     @Override
