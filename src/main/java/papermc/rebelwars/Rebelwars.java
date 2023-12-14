@@ -5,10 +5,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
+import papermc.rebelwars.Listeners.XPBottleBreakListener;
 
 import java.util.logging.Logger;
 
-public final class Rebelwars extends JavaPlugin implements Listener {
+public final class Rebelwars extends JavaPlugin {
 
     @Override
     public @NotNull Logger getLogger() {
@@ -18,13 +19,9 @@ public final class Rebelwars extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         getLogger().info("Plugin start");
-        getServer().getPluginManager().registerEvents(this, this);
+        getServer().getPluginManager().registerEvents(new XPBottleBreakListener(), this);
     }
 
-    @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent event){
-        event.setJoinMessage("Welcome");
-    }
 
     @Override
     public void onDisable() {
