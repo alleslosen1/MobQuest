@@ -1,0 +1,7 @@
+name: MobQuest
+version: 1.0.0
+main: io.papermc.MobQuest
+description: Gives stuff for killing lots of mobs
+author: Alles
+website: https://github.com/alleslosen1/MobQuest
+api-version: '1.20'
