@@ -12,6 +12,9 @@ public class MobQuest extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         Bukkit.getPluginManager().registerEvents(this, this);
+        getPlugin(MobQuest.class).getComponentLogger().info(Component.text(
+                "\n#############\nMobQuest Plugin Started\n#############\n")
+        );
     }
 
     @EventHandler
